@@ -35,7 +35,7 @@ chains](https://scottcochran.github.io/riemann-diagrams/diagrams/T2-trace-landau
   and the paper's own [Figure 1, checked](https://scottcochran.github.io/anthropic-vp-vnp/diagrams/F4-figure-1-2026.11.25.svg)
   arrow by arrow against the Lean.
 
-- [`proof-posters`](https://github.com/scottcochran/riemann-diagrams/tree/main/plugins/proof-posters) is my Claude Code plugin which was used to build the posters.
+- [proof-posters](https://github.com/scottcochran/riemann-diagrams/tree/main/plugins/proof-posters) is my Claude Code plugin which was used to build the posters.
 
 - **[gov-tla](https://scottcochran.github.io/gov-tla/diagrams/gov-tla/B1-constitution-2026.11.25.svg)**: is a similar, toy project using TLA+ to model the US Constitution and Government.
 

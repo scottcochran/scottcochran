@@ -16,6 +16,12 @@ I use AI to make AI safer and easier to work with.
 #### Agentic AI, safe by design
 
 - **[TOPAK](https://github.com/scottcochran/TOPAK)** is an architecture pattern for "Safe by Design" agentic AI collaboration. It treats every agent as Byzantine and keeps models out of the trusted computing base using [TLA+, OPA, Cedar, and Paxos](https://grippinghand.dev/topak).
+  
+  - TLA+ specs and proofs, using mutations, witnesses and hypothesis flipping
+  - A policy floor in Cedar, narrowed per request by an OPA/Rego bundle that can deny but never grant
+  - Multi-Paxos ordering the control-plane log; Kafka as transport only
+  - A Rust reference implementation of the admit path, with its admit decision proved in Lean 4
+  - Agent orchestration via promoted workflows and a tree of narrowing control planes (Proposed)
 
 </div>
 </td>
@@ -24,10 +30,14 @@ I use AI to make AI safer and easier to work with.
 
 #### TLA+
 
-- **[tla-kit](https://github.com/scottcochran/tla-kit)**: the TLA+ tools (TLC, TLAPS and its solvers) in one
-container image pinned by digest, so the checker and the prover are the same build on a laptop and in CI. It
-includes an MCP server, so an agent such as Claude Code can check a spec, read a counterexample and repair a
-proof.
+- **[tla-kit](https://github.com/scottcochran/tla-kit)**: the TLA+ tools in one container image, with an MCP server for agents. Docker is the only dependency.
+
+  - TLC, SANY, PlusCal and TLAPS with Z3, Zenon, Isabelle and LS4, every tool held to a sha256 digest
+  - Reproducible builds: base image by digest, packages from a dated Ubuntu snapshot, attested releases
+  - 14 MCP tools: parse, symbols, evaluate, TLC runs, simulation, coverage, state graphs, proofs, flip tests and proof sync
+  - `prove` by theorem, step or line, reporting each failed obligation and why each backend failed
+  - Paired with the [writing-tla-specs-and-proofs](https://github.com/scottcochran/TOPAK/tree/main/skills/writing-tla-specs-and-proofs) plugin; the same setup runs locally and in GitHub Actions
+  - `tla-kit-selftest` checks the image against itself in about 30 seconds
 
 </div>
 </td>

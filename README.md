@@ -1,6 +1,8 @@
 ### Scott Cochran
 
-I work on AI Safety using formal methods, policy as code, and assisted development. I use AI to make AI safer and easier to work with.
+I work on AI Safety using formal methods, policy as code, and assisted development. 
+
+I use AI to make AI safer and easier to work with.
 
 #### Agentic AI, safe by design
 

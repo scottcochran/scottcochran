@@ -69,6 +69,15 @@ riemann-masullo Lean formalisation of A. M. Masullo's *The Music of the Primes*.
 the [steps no one knows how to repair](https://scottcochran.github.io/riemann-masullo-diagrams/diagrams/M2-no-repair-2026.11.25.svg): the [cone of each open step](https://scottcochran.github.io/riemann-masullo-diagrams/diagrams/M2-no-repair-2026.11.25.svg), the [paper by depth below its target theorems](https://scottcochran.github.io/riemann-masullo-diagrams/diagrams/M3-depth-2026.11.25.svg),
 and the [printed claims the Lean refutes](https://scottcochran.github.io/riemann-masullo-diagrams/diagrams/M5-refuted-2026.11.25.svg).
 
+- **[TOPAK](https://scottcochran.github.io/TOPAK/)**: fifty-eight posters of the TOPAK architecture, drawn from
+its decision records, specs and checkpoints. They show the [roles](https://scottcochran.github.io/TOPAK/diagrams/topak/A1-roles-map-2026.10.05.svg),
+the [authority chain](https://scottcochran.github.io/TOPAK/diagrams/topak/B1-authority-chain-2026.10.05.svg) from intent to effect,
+the [admit pipeline](https://scottcochran.github.io/TOPAK/diagrams/topak/D1-admit-pipeline-2026.10.05.svg),
+the [trusted base](https://scottcochran.github.io/TOPAK/diagrams/topak/G1-trusted-base-2026.10.05.svg),
+[every check and proof](https://scottcochran.github.io/TOPAK/diagrams/topak/H3-verification-map-2026.10.05.svg),
+and [the premises each theorem rests on](https://scottcochran.github.io/TOPAK/diagrams/topak/G3-theorem-premise-dag-2026.10.05.svg).
+Every record, file and name in them links to its source at a pinned commit.
+
 </div>
 </td>
 <td width="50%" valign="top">
